@@ -88,4 +88,4 @@ clean		:
 fclean		:	clean
 			$(RM) $(NAME) $(NAMECLI)
 
-re		:	fclean all
+re		:	fclean all clean
