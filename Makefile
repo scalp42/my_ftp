@@ -64,7 +64,8 @@ CC	=	gcc
 
 RM	=	rm -rf
 
-CFLAGS	= -O3 -W -Wall -ansi -pedantic -D${HOSTTYPE}
+#CFLAGS	= -O3 -W -Wall -ansi -pedantic -D${HOSTTYPE}
+CFLAGS	= -O3 -W -Wall -ansi
 
 LDFLAGS_sun4	=	-lsocket -lnsl
 
