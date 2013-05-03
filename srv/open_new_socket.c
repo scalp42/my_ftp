@@ -30,7 +30,7 @@ char		open_new_socket(client_ftp_t __UNUSED__ *client_ftp, ftp_t *ftp)
     }
   option_value = 1;
 #ifndef sun4
-  if (setsockopt(ftp->s_data, SOL_SOCKET, SO_REUSEPORT,
+  if (setsockopt(ftp->s_data, SOL_SOCKET, SO_REUSEADDR,
 		 (char *)&option_value,
 		 sizeof(option_value)) < 0)
     {
